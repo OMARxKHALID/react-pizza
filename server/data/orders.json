@@ -1,0 +1,833 @@
+[
+  {
+    "id": "8195c8e5-5a58-4863-872c-d7aacad79a65",
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "",
+    "status": "pending"
+  },
+  {
+    "id": "dc672b69-ffb3-4855-b664-fd25906c9899",
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "",
+    "status": "pending"
+  },
+  {
+    "id": "80323afa-a6a0-4840-a0aa-7ed3e4cefc9b",
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "",
+    "status": "pending"
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 2,
+        "unitPrice": 12,
+        "totalPrice": 24
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 2,
+        "unitPrice": 15,
+        "totalPrice": 30
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 2,
+        "unitPrice": 16,
+        "totalPrice": 32
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 2,
+        "unitPrice": 16,
+        "totalPrice": 32
+      }
+    ],
+    "position": "",
+    "priority": false,
+    "id": "order_483"
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      }
+    ],
+    "position": "",
+    "id": "order_64"
+  },
+  {
+    "customer": "omar",
+    "phone": "21321312313",
+    "address": "lahore",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "",
+    "id": "order_266"
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 4,
+        "unitPrice": 12,
+        "totalPrice": 48
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 2,
+        "unitPrice": 15,
+        "totalPrice": 30
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 2,
+        "unitPrice": 16,
+        "totalPrice": 32
+      }
+    ],
+    "position": "31.5817984,74.3145472",
+    "id": "order_804",
+    "estimatedDelivery": "2024-01-22T09:57:48.686Z",
+    "orderPrice": 110,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      },
+      {
+        "pizzaId": 6,
+        "name": "Vegetale",
+        "quantity": 1,
+        "unitPrice": 13,
+        "totalPrice": 13
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      }
+    ],
+    "position": "",
+    "id": "order_910",
+    "estimatedDelivery": "2024-01-22T10:13:59.788Z",
+    "orderPrice": 72,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "",
+    "id": "order_515",
+    "estimatedDelivery": "2024-01-22T17:25:09.760Z",
+    "orderPrice": 28,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "",
+    "id": "order_781",
+    "estimatedDelivery": "2024-01-22T17:23:42.299Z",
+    "orderPrice": 16,
+    "priorityPrice": 1
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 2,
+        "unitPrice": 15,
+        "totalPrice": 30
+      }
+    ],
+    "position": "",
+    "id": "order_753",
+    "estimatedDelivery": "2024-01-22T17:39:05.456Z",
+    "orderPrice": 30,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 2,
+        "unitPrice": 15,
+        "totalPrice": 30
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "",
+    "id": "order_35",
+    "estimatedDelivery": "2024-01-22T17:54:33.798Z",
+    "orderPrice": 46,
+    "priorityPrice": 3
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 6,
+        "name": "Vegetale",
+        "quantity": 1,
+        "unitPrice": 13,
+        "totalPrice": 13
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "",
+    "id": "0BFBDM",
+    "estimatedDelivery": "2024-01-22T18:13:50.493Z",
+    "orderPrice": 57,
+    "priorityPrice": 4
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Bahria Town, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 6,
+        "name": "Vegetale",
+        "quantity": 1,
+        "unitPrice": 13,
+        "totalPrice": 13
+      }
+    ],
+    "position": "",
+    "id": "T2N78A",
+    "estimatedDelivery": "2024-01-22T17:45:59.902Z",
+    "orderPrice": 25,
+    "priorityPrice": 4
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      },
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "ETYXGJ",
+    "estimatedDelivery": "2024-01-22T18:38:56.588Z",
+    "orderPrice": 27,
+    "priorityPrice": 4
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "GJAO74",
+    "estimatedDelivery": "2024-01-22T18:38:25.414Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "H9RJIN",
+    "estimatedDelivery": "2024-01-22T18:40:34.614Z",
+    "orderPrice": 16,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828308",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "57OTIU",
+    "estimatedDelivery": "2024-01-22T18:46:43.578Z",
+    "orderPrice": 16,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "DMC6PN",
+    "estimatedDelivery": "2024-01-22T18:55:05.932Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "495J4T",
+    "estimatedDelivery": "2024-01-22T19:10:59.786Z",
+    "orderPrice": 28,
+    "priorityPrice": 4
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "U7TR6A",
+    "estimatedDelivery": "2024-01-22T19:02:04.246Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "OBQI88",
+    "estimatedDelivery": "2024-01-22T18:54:10.378Z",
+    "orderPrice": 27,
+    "priorityPrice": 4
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "MI14PG",
+    "estimatedDelivery": "2024-01-22T19:14:32.917Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "C2524C",
+    "estimatedDelivery": "2024-01-22T19:16:55.821Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "9I2M95",
+    "estimatedDelivery": "2024-01-22T23:11:10.053Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "YMZ68L",
+    "estimatedDelivery": "2024-01-22T23:12:17.116Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      },
+      {
+        "pizzaId": 5,
+        "name": "Diavola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      },
+      {
+        "pizzaId": 6,
+        "name": "Vegetale",
+        "quantity": 1,
+        "unitPrice": 13,
+        "totalPrice": 13
+      },
+      {
+        "pizzaId": 7,
+        "name": "Napoli",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "5N59GN",
+    "estimatedDelivery": "2024-01-23T00:29:06.225Z",
+    "orderPrice": 88,
+    "priorityPrice": 12
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "Z71SU0",
+    "estimatedDelivery": "2024-01-22T23:52:08.659Z",
+    "orderPrice": 43,
+    "priorityPrice": 0.6000000000000001
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      },
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      },
+      {
+        "pizzaId": 4,
+        "name": "Prosciutto e Rucola",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "31.588352,74.3211008",
+    "id": "VTVLZ7",
+    "estimatedDelivery": "2024-01-23T00:01:15.443Z",
+    "orderPrice": 43,
+    "priorityPrice": 6
+  },
+  {
+    "customer": "omar",
+    "phone": "03036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 3,
+        "unitPrice": 12,
+        "totalPrice": 36
+      }
+    ],
+    "position": "31.5850752,74.2948864",
+    "id": "PXJE6V",
+    "estimatedDelivery": "2024-02-05T10:18:41.059Z",
+    "orderPrice": 36,
+    "priorityPrice": 6
+  },
+  {
+    "customer": "omar",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 3,
+        "name": "Romana",
+        "quantity": 1,
+        "unitPrice": 15,
+        "totalPrice": 15
+      }
+    ],
+    "position": "31.5850752,74.2948864",
+    "id": "69X4JE",
+    "estimatedDelivery": "2024-02-05T09:50:23.045Z",
+    "orderPrice": 15,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "asad",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 1,
+        "name": "Margherita",
+        "quantity": 1,
+        "unitPrice": 12,
+        "totalPrice": 12
+      }
+    ],
+    "position": "",
+    "id": "YKPBQU",
+    "estimatedDelivery": "2024-02-05T12:06:40.108Z",
+    "orderPrice": 12,
+    "priorityPrice": 2
+  },
+  {
+    "customer": "asad",
+    "phone": "+923036828908",
+    "address": "Lahore City Tehsil, Lahore , Pakistan",
+    "priority": true,
+    "cart": [
+      {
+        "pizzaId": 14,
+        "name": "Abruzzese",
+        "quantity": 1,
+        "unitPrice": 16,
+        "totalPrice": 16
+      }
+    ],
+    "position": "",
+    "id": "CXID0Q",
+    "estimatedDelivery": "2024-02-05T19:02:48.130Z",
+    "orderPrice": 16,
+    "priorityPrice": 2
+  }
+]
