@@ -1,31 +1,29 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { getAddress } from '../../services/apiGeocoding';
 
+// Encapsulate geolocation retrieval into a separate function
 function getPosition() {
   return new Promise(function (resolve, reject) {
     navigator.geolocation.getCurrentPosition(resolve, reject);
   });
 }
 
-export const fetchAddress = createAsyncThunk(
-  'user/fetchAddress',
-  async function () {
-    // 1) We get the user's geolocation position
+// Create async thunk using createAsyncThunk's payload creator
+export const fetchAddress = createAsyncThunk('user/fetchAddress', async () => {
+  try {
     const positionObj = await getPosition();
-    const position = {
-      latitude: positionObj.coords.latitude,
-      longitude: positionObj.coords.longitude,
-    };
+    const { latitude, longitude } = positionObj.coords;
 
-    // 2) Then we use a reverse geocoding API to get a description of the user's address, so we can display it the order form, so that the user can correct it if wrong
-    const addressObj = await getAddress(position);
+    const addressObj = await getAddress({ latitude, longitude });
     const address = `${addressObj?.locality}, ${addressObj?.city} ${addressObj?.postcode}, ${addressObj?.countryName}`;
 
-    // 3) Then we return an object with the data that we are interested in.
-    // Payload of the FULFILLED state
-    return { position, address };
+    return { position: { latitude, longitude }, address };
+  } catch (error) {
+    throw new Error(
+      'Failed to fetch address. Please ensure location services are enabled.'
+    );
   }
-);
+});
 
 const initialState = {
   username: '',
@@ -45,7 +43,7 @@ const userSlice = createSlice({
   },
   extraReducers: (builder) =>
     builder
-      .addCase(fetchAddress.pending, (state, action) => {
+      .addCase(fetchAddress.pending, (state) => {
         state.status = 'loading';
       })
       .addCase(fetchAddress.fulfilled, (state, action) => {
@@ -55,8 +53,7 @@ const userSlice = createSlice({
       })
       .addCase(fetchAddress.rejected, (state, action) => {
         state.status = 'error';
-        state.error =
-          'There was a problem getting your address. Make sure to fill this field!';
+        state.error = action.error.message || 'Failed to fetch address.';
       }),
 });
 

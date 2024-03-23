@@ -25,7 +25,7 @@ function Menu() {
   const totalPages = Math.ceil(filteredMenu.length / itemsPerPage);
 
   return (
-    <div className="container mx-auto my-3 p-4 bg-gray-100 rounded-md shadow-md">
+    <div className="container mx-auto my-3 p-4 ">
       <div className="flex items-center mb-4">
         <label className="text-lg font-bold mr-auto">Select Category:</label>
         <select
@@ -44,7 +44,7 @@ function Menu() {
 
       <ul className="divide-y divide-gray-300 px-2">
         {visibleMenu.map((pizza) => (
-          <MenuItem pizza={pizza} key={pizza.id} />
+          <MenuItem pizza={pizza} key={pizza._id} />
         ))}
       </ul>
       <Pagination currentPage={currentPage} totalPages={totalPages} />

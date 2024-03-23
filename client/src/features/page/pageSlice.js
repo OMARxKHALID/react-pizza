@@ -4,10 +4,10 @@ const pageSlice = createSlice({
     name: 'pagination',
     initialState: { currentPage: 1 },
     reducers: {
-      next: (state, action) => {
+      next: (state) => {
         state.currentPage += 1;
       },
-      prev: (state, action) => {
+      prev: (state) => {
         state.currentPage = Math.max(state.currentPage - 1, 1);
       },
       reset: (state) => {

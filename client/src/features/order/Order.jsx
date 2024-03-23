@@ -1,7 +1,5 @@
-import { useFetcher, useLoaderData } from 'react-router-dom';
-
+import { Link, useFetcher, useLoaderData } from 'react-router-dom';
 import OrderItem from './OrderItem';
-
 import { getOrder } from '../../services/apiRestaurant';
 import {
   calcMinutesLeft,
@@ -10,6 +8,7 @@ import {
 } from '../../utils/helpers';
 import { useEffect } from 'react';
 import UpdateOrder from './UpdateOrder';
+import Button from '../../ui/Button';
 
 function Order() {
   const order = useLoaderData();
@@ -24,7 +23,7 @@ function Order() {
 
   // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
   const {
-    id,
+    _id,
     status,
     priority,
     priorityPrice,
@@ -38,7 +37,7 @@ function Order() {
   return (
     <div className="space-y-8 px-4 py-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-xl font-semibold">Order #{id} status</h2>
+        <h2 className="text-xl font-semibold">Order #{_id} status</h2>
 
         <div className="space-x-2">
           {priority && (
@@ -67,10 +66,10 @@ function Order() {
         {cart.map((item) => (
           <OrderItem
             item={item}
-            key={item.pizzaId}
+            key={item._id}
             isLoadingIngredients={fetcher.state === 'loading'}
             ingredients={
-              fetcher?.data?.find((el) => el.id === item.pizzaId)
+              fetcher?.data?.find((el) => el._id === item.pizzaId)
                 ?.ingredients ?? []
             }
           />
@@ -78,8 +77,8 @@ function Order() {
       </ul>
 
       <div className="space-y-2 bg-stone-200 px-6 py-5">
-        <p className="text-sm font-medium text-stone-600">
-          Price pizza: {formatCurrency(orderPrice)}
+        <p className="text-sm font-semibold text-stone-600">
+          Total price: {formatCurrency(orderPrice)}
         </p>
         {priority && (
           <p className="text-sm font-medium text-stone-600">
@@ -91,13 +90,20 @@ function Order() {
         </p>
       </div>
 
-      {!priority && <UpdateOrder order={order} />}
+      <div className="flex justify-between">
+        <div>
+          {!priority && <UpdateOrder />}
+        </div>
+        <div>
+          <Button as={Link} to={`/order/${_id}/payment`} type="primary">Proceed to Payment</Button>
+        </div>
+      </div>
     </div>
   );
 }
 
 export async function loader({ params }) {
-  const order = await getOrder(params.orderId);
+  const order = await getOrder(params._id);
   return order;
 }
 

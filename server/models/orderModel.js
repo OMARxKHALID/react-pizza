@@ -1,9 +1,13 @@
 import mongoose from "mongoose";
 
 const pizzaSchema = new mongoose.Schema({
-  menuItemId: {
+  pizzaId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Menu",
+    required: true,
+  },
+  name: {
+    type: String,
     required: true,
   },
   quantity: {
@@ -18,6 +22,11 @@ const pizzaSchema = new mongoose.Schema({
 
 const orderSchema = new mongoose.Schema(
   {
+    customerId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
     customer: {
       type: String,
       required: true,
@@ -38,26 +47,10 @@ const orderSchema = new mongoose.Schema(
       type: [pizzaSchema],
       required: true,
     },
-    position: {
-      type: String,
-      required: false,
-    },
-    id: {
-      type: String,
-      required: true,
-    },
-    estimatedDelivery: {
-      type: Date,
-      required: false,
-    },
-    orderPrice: {
-      type: Number,
-      required: false,
-    },
-    priorityPrice: {
-      type: Number,
-      required: false,
-    },
+    position: String,
+    estimatedDelivery: Date,
+    orderPrice: Number,
+    priorityPrice: Number,
   },
   { timestamps: true }
 );

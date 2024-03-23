@@ -7,6 +7,7 @@ import CreateOrder, { action as createOrderAction } from './features/order/Creat
 import Order, { loader as orderLoader } from './features/order/Order';
 import { action as updateOrderAction } from './features/order/UpdateOrder';
 import AppLayout from './ui/AppLayout';
+import CreatePayment from './features/payment/CreatePayment';
 
 export const router = createBrowserRouter([
   {
@@ -31,11 +32,15 @@ export const router = createBrowserRouter([
         action: createOrderAction,
       },
       {
-        path: '/order/:orderId',
+        path: '/order/:_id',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
         action: updateOrderAction,
+      },
+      {
+        path: '/order/:_id/payment',
+        element: <CreatePayment />,
       },
     ],
   },

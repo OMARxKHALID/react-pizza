@@ -3,13 +3,12 @@ import { Form, redirect, useActionData, useNavigation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, getCart, getTotalCartPrice } from '../cart/cartSlice';
 import { fetchAddress } from '../user/userSlice';
-import { createOrder } from '../../services/apiRestaurant';
-import store from '../../store';
+import { createOrder, setUser } from '../../services/apiRestaurant';
 import Button from '../../ui/Button';
 import EmptyCart from '../cart/EmptyCart';
 import { formatCurrency } from '../../utils/helpers';
+import store from "../../store"
 
-// https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
   /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
     str
@@ -132,6 +131,7 @@ function CreateOrder() {
               ? 'Placing order....'
               : `Order now from ${formatCurrency(totalPrice)}`}
           </Button>
+          
         </div>
       </Form>
     </div>
@@ -141,14 +141,17 @@ function CreateOrder() {
 export async function action({ request }) {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
+  const res = await setUser(data.customer)
 
   const order = {
     ...data,
+    customerId: res._id,
+    customer: res.username,
     cart: JSON.parse(data.cart),
     priority: data.priority === 'true',
   };
 
-  console.log(order);
+  const { customerId, customer, phone, address, priority, cart, postion } = order;
 
   const errors = {};
   if (!isValidPhone(order.phone))
@@ -158,12 +161,12 @@ export async function action({ request }) {
   if (Object.keys(errors).length > 0) return errors;
 
   // If everything is okay, create a new order and redirect
-  const newOrder = await createOrder(order);
+  const newOrder = await createOrder({ customerId, customer, phone, address, priority, cart, postion });
 
   // Do NOT overuse
   store.dispatch(clearCart());
 
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/order/${newOrder._id}`);
 }
 
 export default CreateOrder;

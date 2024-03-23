@@ -11,8 +11,8 @@ const setUser = async (req, res) => {
     const newUser = new User({ username });
     await newUser.save();
     res.status(201).json({
-      _id : newUser._id,
-      username : newUser.username,
+      _id: newUser._id,
+      username: newUser.username,
     });
   } catch (error) {
     res
@@ -21,4 +21,16 @@ const setUser = async (req, res) => {
   }
 };
 
-export {setUser};
+const getUserById = async (req, res) => {
+  const { _id } = req.params;
+  try {
+    const user = await User.findById(_id);
+    res.status(200).json(user);
+  } catch (error) {
+    res
+      .status(500)
+      .json({ error: "Failed to find user", details: error.message });
+  }
+};
+
+export { setUser, getUserById };

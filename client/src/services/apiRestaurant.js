@@ -1,55 +1,80 @@
-const API_URL = 'http://localhost:5000/api';
-
 export async function getMenu() {
   try {
-    const res = await fetch(`${API_URL}/menu`);
+    const res = await fetch(`/api/menu`);
     if (!res.ok) throw Error('Failed getting menu');
 
     const data = await res.json();
     return data;
   } catch (error) {
-    console.error('Error fetching menu:', error);
+    console.error('Error fetching menu:', error.message);
     return [];
   }
 }
 
-export async function getOrder(id) {
+export async function getOrder(_id) {
   try {
-    const res = await fetch(`${API_URL}/order/${id}`);
-    if (!res.ok) throw Error(`Couldn't find order #${id}`);
+    const res = await fetch(
+      `/api/order/${_id}` ,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+    );
+    if (!res.ok) throw Error(`Couldn't find order #${_id}`);
 
-    const { data } = await res.json();
+    const data = await res.json();
     return data;
   } catch (error) {
-    console.error(`Error fetching order #${id}:`, error);
+    console.error(`Error fetching order #${_id}:`, error.message);
     return null;
   }
 }
 
-export async function createOrder(newOrder) {
+export async function createOrder({
+  customerId,
+  customer,
+  phone,
+  address,
+  priority,
+  cart,
+  postion,
+}) {
   try {
-    const res = await fetch(`${API_URL}/order`, {
+    const res = await fetch(`/api/order/create`, {
       method: 'POST',
-      body: JSON.stringify(newOrder),
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify({
+        customerId,
+        customer,
+        phone,
+        address,
+        priority,
+        cart,
+        postion,
+      }),
     });
 
-    if (!res.ok) throw Error();
-    const { data } = await res.json();
+    if (!res.ok) {
+      throw new Error('Failed to create order');
+    }
+
+    const data = await res.json();
     return data;
   } catch (error) {
-    console.error('Failed creating your order:', error);
-    throw Error('Failed creating your order');
+    console.error('Failed creating your order:', error.message);
   }
 }
 
-export async function updateOrder(id, updateObj) {
+
+export async function updateOrder(_id, priority) {
   try {
-    const res = await fetch(`${API_URL}/order/${id}`, {
+    const res = await fetch(`/api/order/${_id}`, {
       method: 'PATCH',
-      body: JSON.stringify(updateObj),
+      body: JSON.stringify(priority),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -57,22 +82,37 @@ export async function updateOrder(id, updateObj) {
 
     if (!res.ok) throw Error();
   } catch (error) {
-    console.error('Failed updating your order:', error);
-    throw Error('Failed updating your order');
+    console.error('Failed updating your order:', error.message);
   }
 }
-// export async function setUser() {
-//   try {
-//     const res = await fetch(`${API_URL}/users/`, {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ username }), 
-//     });
-//     const data = await res.json();
-//     return data;
-//   } catch (error) {
-//     console.error('Error fetching user:', error);
-//   }
-// }
+
+export async function setUser(username) {
+  try {
+    const res = await fetch(`/api/users/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username }), 
+    });
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching user:', error.message);
+  }
+}
+
+export async function getUser() {
+  try {
+    const res = await fetch(`/api/users/:${_id}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching user:', error.message);
+  }
+}
