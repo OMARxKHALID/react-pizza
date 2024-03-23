@@ -1,6 +1,6 @@
-import Button from '/src/ui/button';
 import { useDispatch } from 'react-redux';
 import { next, prev } from './../page/pageSlice';
+import Button from '../../ui/Button';
 function Pagination({ currentPage, totalPages }) {
   const dispatch = useDispatch();
 
