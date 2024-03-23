@@ -18,7 +18,6 @@ Fully responsive design ensures a seamless experience across devices, from deskt
 
 - **Location-Based Services** 🗺️: Utilizes Geolocation API to provide accurate delivery estimates and locate nearby pizza outlets for pickup.
 
-- **Promotions and Discounts** 🎉: Offers discounts, promo codes, and loyalty programs to incentivize purchases and enhance user engagement.
 
 ## Setup
 
