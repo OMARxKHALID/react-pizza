@@ -4,7 +4,7 @@ import { getMenu } from '../../services/apiRestaurant';
 import MenuItem from './MenuItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategory } from '../../features/menu/categorySlice';
-import Pagination from '../page/Pagination';
+import Pagination from '../page/pagination';
 
 function Menu() {
   const menu = useLoaderData();
